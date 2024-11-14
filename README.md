@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+# TP8 React con TypeScript - Trabajo practico de React con TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación de React con TypeScript que incluye varios componentes y funcionalidades para la gestión de productos. Utiliza React Bootstrap para el diseño y Vite como bundler.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Componentes de React**: Incluye varios componentes como `AppProduct`, `ComponentCounter`, `ComponentUseEffect`, `FormComponent`, y `MiPrimerComponent`.
+- **Formularios**: Utiliza formularios para la carga de productos y otros datos.
+- **Estilos**: Utiliza Bootstrap para el diseño y estilos.
+- **Hooks personalizados**: Incluye un hook personalizado `useForm` para manejar formularios.
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Para instalar y ejecutar el proyecto, sigue estos pasos:
 
-- Configure the top-level `parserOptions` property like this:
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repositorio.git
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. Navega al directorio del proyecto:
+    ```bash
+   cd tu-repositorio
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. Instala las dependencias:
+    ```bash
+    npm install
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+4. Ejecuta el proyecto:
+    ```bash
+    npm run dev
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Estructura del Proyecto
+
+    src/components: Contiene los componentes de React.
+    src/hooks: Contiene hooks personalizados.
+    src/App.tsx: Componente principal de la aplicación.
+    src/main.tsx: Punto de entrada de la aplicación.
+    index.html: Archivo HTML principal.
+
+## Componentes
+### AppProduct
+
+Componente principal que maneja la carga y visualización de productos.
+### ComponentCounter
+
+Componente que maneja un contador simple.
+### ComponentUseEffect
+
+Componente que demuestra el uso del hook useEffect.
+### FormComponent
+
+Componente que maneja un formulario básico.
+### MiPrimerComponent
+
+Componente que muestra un texto con estilos personalizados.
+### Hooks
+useForm
+
+Hook personalizado para manejar formularios.
